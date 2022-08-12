@@ -1,8 +1,11 @@
 {
+  "name": "@ginlink/100",
   "version": "0.1.0",
-  "license": "MIT",
+  "module": "dist/mylib.esm.js",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "author": "ginlink",
+  "license": "MIT",
   "files": [
     "dist",
     "src"
@@ -31,9 +34,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "mylib",
-  "author": "ginlink",
-  "module": "dist/mylib.esm.js",
   "size-limit": [
     {
       "path": "dist/mylib.cjs.production.min.js",
