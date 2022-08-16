@@ -3,7 +3,14 @@
  * https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/8
  */
 
+// 核心：Array.from支持从可迭代对象中生成数组
+
 const sort = (a: number, b: number) => a - b;
+
+// 标准
+export function flatUniqueSortCommon(nums: any[]) {
+  return Array.from(new Set(nums.flat(Infinity))).sort(sort);
+}
 
 // 自己
 export function flatUniqueSort(nums: any[], depth: number = 1) {
@@ -19,9 +26,4 @@ export function flatUniqueSort(nums: any[], depth: number = 1) {
       }
     })
     .sort(sort);
-}
-
-// 标准
-export function flatUniqueSortCommon(nums: any[]) {
-  return Array.from(new Set(nums.flat(Infinity))).sort(sort);
 }

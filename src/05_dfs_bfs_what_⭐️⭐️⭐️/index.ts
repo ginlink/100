@@ -1,5 +1,7 @@
 import { TreeNode } from '../utils';
 
+// 核心：用栈模拟递归，用队列模拟层
+
 /**
  * dfs recursion
  */
